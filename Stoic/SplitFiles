@@ -1,8 +1,0 @@
-import aspose.pdf as ap
-
-document = ap.Document("Stoic\January.pdf")
-
-for page in document.pages:
-    splitPDF = ap.Document()
-    splitPDF.pages.add(page)
-    splitPDF.save("Page_" + str(page.number) + ".pdf")
