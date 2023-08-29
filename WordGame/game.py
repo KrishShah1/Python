@@ -24,8 +24,6 @@ def game():
     game_active = True
     total_words = len(final_list)
     
-    print(final_list)
-
     while(game_active):
         guess = input("Enter a word made from the letters of " + startWord + ": ")
         
@@ -33,8 +31,6 @@ def game():
             game_active = False
         if (total_words == 0):
             game_active = False
-        # if (t == 0):
-        #     game_active = False
         
         if guess in final_list:
             print("Correct Word")

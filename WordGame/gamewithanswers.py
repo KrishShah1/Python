@@ -1,6 +1,7 @@
 import enchant
 from itertools import permutations
-
+import time
+    
 dictionary = enchant.Dict("en_US")
 mainWord = ""
 
@@ -23,6 +24,8 @@ def game():
     game_active = True
     total_words = len(final_list)
     
+    print(final_list)
+
     while(game_active):
         guess = input("Enter a word made from the letters of " + startWord + ": ")
         
@@ -38,7 +41,6 @@ def game():
             final_list.remove(guess)
         else:
             print("Not A Correct Word")
-            print("The total number of words left is " + str(total_words))
-              
+            print("The total number of words left is " + str(total_words))                 
 
 game()
