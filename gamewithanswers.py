@@ -11,7 +11,7 @@ def game():
     
     allPossibleWords = []
     
-    for count in range(3 , len(startWord) + 1):
+    for count in range(6 , len(startWord) + 1):
         addingAllWords = permutations(startWord, count)
         allPossibleWords += [' '.join(i) for i in addingAllWords]
                     
